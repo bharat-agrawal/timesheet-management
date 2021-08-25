@@ -141,17 +141,17 @@ const top100Films = [
             </Typography>
             <Paper className={clsx(classes.paper, classes.boxShadow, classes.spaceTop)} elevation={0}>
             <Box pl={2} mb={0.5} width="100%">
-                <TextareaAutosize aria-label="empty textarea" placeholder="Empty" />
+                {/* <TextareaAutosize aria-label="empty textarea" placeholder="Empty" />
                 <Autocomplete
       id="combo-box-demo"
       options={top100Films}
       getOptionLabel={(option) => option.title}
       style={{ width: 300 }}
       renderInput={(params) => <TextField {...params} label="Combo box" variant="outlined" />}
-    />
+    /> */}
 
 
-        <Select
+        {/* <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={age}
@@ -159,15 +159,15 @@ const top100Films = [
         >
           <MenuItem value={"billable"}>Billable</MenuItem>
           <MenuItem value={"nonBillable"}>Non Billable</MenuItem>
-        </Select>
+        </Select> */}
 
-        <Button
+        {/* <Button
                                     variant="contained"
                                     color="primary"
                                     //onClick={createStore}
                                 >
                                     Start
-                                </Button>
+                                </Button> */}
             </Box>
                 </Paper>
             <Paper className={clsx(classes.paper, classes.boxShadow, classes.spaceTop)} elevation={0}>
