@@ -236,7 +236,7 @@ export default function Projects() {
                         return (
                             <TableRow hover  key={index}>
                                 <TableCell>{row.name}</TableCell>
-                                <TableCell>{GlobalFunctions.getDate(row.createdOn)}</TableCell>
+                                <TableCell>0 hr</TableCell>
 
                                 <TableCell>
                                     <button  onClick={()=>callGetProjectSettigsApi(row.id)} >Edit Settings</button>

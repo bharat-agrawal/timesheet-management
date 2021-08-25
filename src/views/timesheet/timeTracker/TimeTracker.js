@@ -23,6 +23,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import Select from '@material-ui/core/Select';
+import StopWatch from "../../../components/timer/StopWatch"
 
 
 
@@ -168,6 +169,7 @@ const top100Films = [
                                 >
                                     Start
                                 </Button> */}
+                                <StopWatch />
             </Box>
                 </Paper>
             <Paper className={clsx(classes.paper, classes.boxShadow, classes.spaceTop)} elevation={0}>
