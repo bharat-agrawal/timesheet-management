@@ -18,6 +18,8 @@ import MoreOutlinedIcon from "@material-ui/icons/MoreOutlined";
 import clsx from "clsx";
 import GlobalFunctions from "../../../assets/common/GlobalFunctions";
 import SearchIcon from "@material-ui/icons/Search";
+import EditIcon from '@material-ui/icons/Edit';
+import ArchiveIcon from '@material-ui/icons/Archive';
 
 
 export default function Projects() {
@@ -124,15 +126,7 @@ export default function Projects() {
                             </Box>
                         </Grid>
                         <Grid item xs="auto" sm="auto" md="auto">
-                            <Box  pr={3} >
-                                <Button
-                                    variant="contained"
-                                    color="primary"
-                                    //onClick={createStore}
-                                >
-                                    Add New Cost Head
-                                </Button>
-                            </Box>
+                            
 
                             <Box  pr={2} >
                                 <Button
@@ -163,8 +157,15 @@ export default function Projects() {
                                 <TableCell>{row.name}</TableCell>
 
                                 <TableCell>
-                                    <button>Edit Settings</button>
-                                    <button>Archive</button>
+
+                                <IconButton color="primary" aria-label="upload picture" component="span">
+          <EditIcon />
+
+        </IconButton>
+        <IconButton color="secondary" aria-label="upload picture" component="span">
+          <ArchiveIcon />
+        </IconButton>
+                                    
 
                                 </TableCell>
                                 

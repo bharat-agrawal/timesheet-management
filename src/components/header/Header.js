@@ -18,6 +18,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import {useHistory} from "react-router-dom";
+import Link from '@material-ui/core/Link';
+import brandLogo from "./../../assets/images/logo.png";
+
 
 const drawerWidth = 240;
 
@@ -129,7 +132,11 @@ export default function Header(props) {
           paper: classes.drawerPaper,
         }}
       >
+      
         <div className={classes.drawerHeader}>
+          <Link href="#">
+            <img src={brandLogo} alt="onclockwork"/>
+      </Link>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>

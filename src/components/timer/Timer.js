@@ -1,5 +1,5 @@
 import React from "react";
-import "./Timer.css";
+import "./StopWatch.css";
   
 export default function Timer(props) {
   return (
