@@ -6,7 +6,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import React from "react";
 import {useForm} from "react-hook-form";
 import GlobalFunctions from "../../../assets/common/GlobalFunctions";
-import ValidationMessage from "../../../assets/common/Validation";
+
 import useStyles from "./Style"
 import "../../../assets/styles/style.scss";
 
