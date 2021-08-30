@@ -21,6 +21,9 @@ import SearchIcon from "@material-ui/icons/Search";
 import CreateProject from "./CreateProject";
 import UpdateProject from "./UpdateProject";
 import UpdateSettings from "./UpdateSettings";
+import { baseUrl } from "../../../config";
+import EditIcon from '@material-ui/icons/Edit';
+import UpdateIcon from '@material-ui/icons/Update';
 const TablePageData = {
     page: 0,
     from: 1,
@@ -133,7 +136,7 @@ export default function Projects() {
         //     timerOn:formData.timerOn,
         // };
 
-            fetch('http://192.168.0.171:8345/project/'+formData.id+'/settings', {
+            fetch(baseUrl+'project/'+formData.id+'/settings', {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -239,9 +242,15 @@ export default function Projects() {
                                 <TableCell>0 hr</TableCell>
 
                                 <TableCell>
-                                    <button  onClick={()=>callGetProjectSettigsApi(row.id)} >Edit Settings</button>
+
+                                <IconButton onClick={()=>callGetProjectSettigsApi(row.id)} color="primary" aria-label="upload picture" component="span">
+          <EditIcon />
+
+        </IconButton>
+        <IconButton onClick={updateProject(row)} color="primary" aria-label="upload picture" component="span">
+          <UpdateIcon />
+        </IconButton>
                                     
-                                    <button onClick={updateProject(row)}>Update</button>
 
                                 </TableCell>
                                 

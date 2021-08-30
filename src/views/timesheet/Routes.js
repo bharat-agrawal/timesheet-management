@@ -39,9 +39,9 @@ function Routes() {
             <Route exact path="/timesheet/costHead">
                 <CostHead/>
             </Route>
-            <Route exact path="/timesheet/settings">
+            {/* <Route exact path="/timesheet/settings">
                 <Settings/>
-            </Route>
+            </Route> */}
             <Route exact path="/timesheet" render={() => <Redirect to="/timesheet/timeTracker"/>}
             />
         </div>

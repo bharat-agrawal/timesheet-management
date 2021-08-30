@@ -44,11 +44,11 @@ export const MenuItems = [
         id: "costHead",
         icon: <AttachMoneyIcon />
       },
-      {
-        url: "/timesheet/settings",
-        type: "LINK",
-        name: "Settings",
-        id: "settings",
-        icon: <SettingsIcon />
-      }
+      // {
+      //   url: "/timesheet/settings",
+      //   type: "LINK",
+      //   name: "Settings",
+      //   id: "settings",
+      //   icon: <SettingsIcon />
+      // }
     ];
